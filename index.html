@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ankush Roy – About Me</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: none;
+                padding: none;
+            }
+            body {
+                background: #1e1e2e;
+                color: #cdd6f4;
+                font-family: 'Poppins', sans-serif;
+                overflow: hidden;
+            }
+            .shape {
+                position: absolute;
+                opacity: 0.3;
+                z-index: 0;
+                animation: float 6s ease-in-out infinite;
+            }
+            .shape1 {
+                width: 100px;
+                height: 100px;
+                background: #89b4fa;
+                border-radius: 50%;
+                top: 10%;
+                left: 15%;
+                animation-duration: 7s;
+            }
+            .shape2 {
+                width: 150px;
+                height: 150px;
+                background: #f38ba8;
+                border-radius: 50% 20% 50% 20%;
+                top: 60%;
+                left: 75%;
+                animation-duration: 9s;
+            }
+            .shape3 {
+                width: 80px;
+                height: 80px;
+                background: #f9e2af;
+                border-radius: 0;
+                top: 35%;
+                left: 50%;
+                animation-duration: 5s;
+            }
+            .shape4 {
+                width: 120px;
+                height: 120px;
+                background: #cba6f7;
+                border-radius: 75%;
+                top: 80%;
+                left: 10%;
+                animation-duration: 8s;
+            }
+            .shape5 {
+                width: 60px;
+                height: 60px;
+                background: #fab387;
+                border-radius: 50%;
+                top: 20%;
+                left: 85%;
+                animation-duration: 6s;
+            }
+            @keyframes float {
+                0% { 
+                    transform: translateY(0) rotate(0deg) scale(1); 
+                    opacity: 0.4; 
+                }
+                25% {
+                    transform: translateY(-15px) rotate(90deg) scale(1.05);
+                    opacity: 0.6; 
+                }
+                50% {
+                    transform: translateY(-30px) rotate(180deg) scale(1);
+                    opacity: 0.8; 
+                }
+                75% {
+                    transform: translateY(-15px) translateX(10px) rotate(270deg) scale(0.95);
+                    opacity: 0.6; 
+                }
+                100% {
+                    transform: translateY(0) rotate(360deg) scale(1);
+                    opacity: 0.4; 
+                }
+            }
+            .container {
+                position: relative;
+                z-index: 1;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+            h1 {
+                color: #89b4fa;
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+            }
+            h1 span {
+                font-size: 1rem;
+                color: #f38ba8;
+            }
+            h2 {
+                color: #f38ba8;
+                font-size: 1.5rem;
+                margin-top: 1.5rem;
+            }
+            p {
+                line-height: 1.6;
+                margin-bottom: 1rem;
+            }
+            a {
+                color: #89b4fa;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .skills {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+            }
+            .skills li {
+                background: #313244;
+                padding: 0.5rem 1rem;
+                margin: 0.5rem;
+                border-radius: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- some random shapes -->
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+
+        <div class="container">
+            <h1>Hi, I'm Ankush Roy <span>(Bishnu)</span></h1>
+            <p>I’m a high school student with a love for Mathematics and Game-Dev.</p>
+
+            <h2>Languages & Tools</h2>
+            <ul class="skills"> <!-- skills and tools -->
+                <li>Mathematics</li>
+                <li>C/C++</li>
+                <li>Rust</li>
+                <li>Lua</li>
+                <li>HTML/CSS</li>
+                <li>JS (Vanilla/Svelte/React)</li>
+                <li>Linux (Arch)</li>
+                <li>Neovim & Tmux</li>
+                <li>Spanish, English, Bengali, Hindi, Kokborok</li>
+            </ul>
+
+            <h2>About Me</h2>
+            <p>
+                I am for now learning GPU APIs like Vulkan and stuff. Other than
+                that I am also making a cross platform application that uses modern
+                GPU APIs like DX12/Vulkan/Metal, the application is 
+                <a href="https://github.com/AnkushRoy-code/Garage">here</a>.
+            </p>
+        </div>
+    </body>
+</html>
